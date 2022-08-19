@@ -1,0 +1,31 @@
+<h1>Editando o usuário: {{register.name}}</h1>
+
+<form action="/register/edit" method="post">
+    <input type="hidden" name="id" value="{{register.id}}">
+    <div class="form-control">
+        <label for="name">Informe o seu nome</label>
+        <input type="text" name="name" placeholder="Digite o seu nome" value="{{register.name}}">
+    </div>
+
+    <div class="form-control">
+        <label for="cep">Informe o seu cep</label>
+        <input type="text" name="cep" placeholder="Digite o seu cep" value="{{register.cep}}">
+    </div>
+
+    <div class="form-control">
+        <label for="state">Informe o seu estado</label>
+        <input type="text" name="state" placeholder="Digite o seu estado" value="{{register.state}}">
+    </div>
+
+    <div class="form-control">
+        <label for="city">Informe a sua cidade</label>
+        <input type="text" name="city" placeholder="Digite a sua cidade" value="{{register.city}}">
+    </div>
+
+    <div class="form-control">
+        <label for="address">Informe o seu endereço</label>
+        <input type="text" name="address" placeholder="Digite o seu endereço" value="{{register.address}}">
+    </div>
+
+    <input type="submit" value="Cadastrar" class="btn">
+</form>

@@ -1,0 +1,17 @@
+<h1>Todos os Registros</h1>
+<ul class="register-list">
+    {{#each register}}
+    <li><a href="/" class="name">{{this.name}}</a></li>
+    <div class="actions">
+        <a href="/register/edit/{{this.id}}"><i class="bi bi-pencil-square"></i></a>
+        
+        <form action="/register/remove" method="post">
+            <input type="hidden" name="id" value="{{this.id}}">
+
+            <button type="submit">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </form>
+    </div>
+    {{/each}}
+</ul>
